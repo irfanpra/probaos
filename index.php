@@ -1,5 +1,5 @@
 <?php
-$konekcija = new PDO("mysql:dbname=baza;host=mysql-57-centos7", getenv("MYSQL_USERNAME"), getenv("MYSQL_PASSWORD"));
+$konekcija = new PDO("mysql:dbname=baza;host=mysql-57-centos7", "korisnik", "sifra"));
 $rez = $konekcija->query("SELECT * FROM imena");
 foreach($rez as $red){
 	echo $red['ime']."<br>";
